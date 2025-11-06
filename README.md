@@ -2,7 +2,7 @@
 This project demonstrates how I built a fully automated, resilient, and scalable system to collect real-time property data from Redfin, using Make.com, Apify, and Google Sheets.
 This project demonstrates how I built a fully automated, resilient, and scalable system to collect real-time property data from Redfin, using Make.com, Apify, and Google Sheets.
 
-🚀 Overview
+#🚀 Overview
 
 The goal was to design a hands-free automation that continuously gathers property listings and their key data points (price, Redfin Estimate, address, etc.) — even with strong anti-scraping measures and dynamic JavaScript rendering on Redfin pages.
 
@@ -14,11 +14,11 @@ Make.com → orchestrating and scheduling the entire workflow.
 
 Google Sheets → serving as a simple, reliable job queue.
 
-⚙️ System Architecture
+#⚙️ System Architecture
 
 The automation runs through a two-part asynchronous queue system:
 
-🧩 Scenario 1 – “Collector”
+#🧩 Scenario 1 – “Collector”
 
 Runs once per day:
 
@@ -26,7 +26,7 @@ Finds new Redfin property URLs.
 
 Adds them to a Google Sheet “To-Do” list.
 
-🔁 Scenario 2 – “Scraper”
+#🔁 Scenario 2 – “Scraper”
 
 Runs every 15 minutes:
 
@@ -36,7 +36,7 @@ Uses Apify Playwright crawler to extract data.
 
 Saves it to the main database and removes it from the queue.
 
-This structure ensures:
+#This structure ensures:
 
 ✅ No timeouts
 
@@ -46,7 +46,7 @@ This structure ensures:
 
 🧭 Zero manual intervention
 
-🧠 Key Highlights
+#🧠 Key Highlights
 
 Used Playwright browser engine to bypass anti-bot systems.
 
@@ -58,7 +58,7 @@ Achieved continuous, reliable scraping without failures.
 
 Designed for resilience, scalability, and clarity in automation.
 
-📊 Example Output
+#📊 Example Output
 URL	                                                                                      Price	      estimated price	Sale history
 https://www.redfin.com/CA/San-Francisco/2926-25th-St-94110/home/197009327	                $999,000	  $1,046,404	    Nov 5, 2025
 https://www.redfin.com/CA/San-Francisco/2122-Mason-St-94133/home/543274                  	$2,680,000	$2,675,353	    Nov 6, 2025
@@ -74,7 +74,7 @@ https://www.redfin.com/CA/San-Francisco/310-Townsend-St-94107/unit-305/home/1730
 https://www.redfin.com/CA/San-Francisco/988-Harrison-St-94107/unit-ZE5/home/198874451	    $639,000	  $638,558	      Nov 5, 2025
 https://www.redfin.com/CA/San-Francisco/988-Harrison-St-94107/unit-XC8/home/198873942	    $1,029,000	$1,026,079	    Nov 5, 2025
 
-💡 Learnings
+#💡 Learnings
 
 This project reinforced the importance of:
 
@@ -84,7 +84,7 @@ Breaking large jobs into smaller, independent tasks.
 
 Designing for failure tolerance and scalability from the start.
 
-🧰 Tools & Platforms
+#🧰 Tools & Platforms
 
 🧠 Make.com
 
