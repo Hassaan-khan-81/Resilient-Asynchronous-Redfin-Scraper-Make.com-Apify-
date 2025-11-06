@@ -69,15 +69,7 @@ Runs every 15 minutes:
 
 ---
 
-## 🖼️ Screenshots
 
-| Description | Screenshot |
-|--------------|-------------|
-| Make.com “Collector” Scenario | ![Collector Scenario](./screenshots/collector-scenario.png) |
-| Make.com “Scraper” Scenario | ![Scraper Scenario](./screenshots/scraper-scenario.png) |
-| Google Sheets Queue | ![Google Sheet Queue](./screenshots/google-sheet.png) |
-| Apify Dashboard Run | ![Apify Dashboard](./screenshots/apify-run.png) |
-| Architecture Diagram | ![Architecture Diagram](./screenshots/architecture-diagram.png) |
 
 ---
 
